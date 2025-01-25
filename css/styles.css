@@ -55,8 +55,8 @@ h3 {
 .container {
   max-width: 1158px;
   margin: 0 auto;
-  padding: 0px 15px; /* Додаємо внутрішні відступи для уникнення прилипання контенту */
-  box-sizing: border-box; /* Включає падінги та бордери в ширину контейнера */
+  padding: 0px 15px; 
+  box-sizing: border-box; 
 }
 
 /* Header */
@@ -148,7 +148,11 @@ h3 {
 
 .hero-section {
   background-color: #2e2f42;
-  margin: 0;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1440px;
+  margin: 0 auto;
   width: 100%;
   padding: 188px 0;
 }
@@ -216,12 +220,27 @@ h3 {
 
 .adventages-list {
   display: flex;
-  gap: 24px; /* Відстань між блоками */
+  gap: 24px; 
 }
 
 .adventages-item {
-  width: calc((100% - (3 * 24px)) / 4); /* Розраховуємо ширину блоків */
+  width: calc((100% - (3 * 24px)) / 4);
 }
+.adventages-icon-cnt{
+  background-color: #f4f4fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 100px;
+  border: 1px solid #8e8f99;
+border-radius: 4px;
+margin-bottom: 8px;
+}
+.adventages-icon{
+  min-width: 64px;
+
+}
+
 .adventages {
   color: #2e2f42;
   font-weight: 500;
@@ -283,7 +302,29 @@ h3 {
   text-align: center;
   padding: 32px 0;
 }
-
+.icons-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 8px ;
+padding: 0 16px;
+}
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5
+}
+.icon-social{
+  width: 16px;
+  height: 16px;
+  fill: #f4f4fd;
+  
+}
 .name {
   font-weight: 500;
   font-size: 20px;
@@ -375,4 +416,31 @@ h3 {
   color: #f4f4fd;
   letter-spacing: 0.02em;
   max-width: 264px;
+}
+
+.icons-container-ftr{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 208px;
+}
+
+.social-media{
+
+}
+.icon-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5
+}
+.icon-social-footer{
+  width: 24px;
+  height: 24px;
+  fill: #f4f4fd;
+  
 }
