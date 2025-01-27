@@ -105,12 +105,13 @@ h3 {
 }
 
 .navi-link {
+  content: "";
   display: block;
   color: #2e2f42;
   font-weight: 500;
   letter-spacing: 0.02em;
   padding: 24px 0;
-  tansition-property: color;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -124,9 +125,10 @@ h3 {
   display: block;
   height: 4px;
   border-radius: 2px;
+  margin-top: 21px;
   width: 100%;
   opacity: 0;
-  transition-property: background-color opacity;
+  transition-property: background-color, opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
