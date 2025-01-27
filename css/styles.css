@@ -184,6 +184,7 @@ h3 {
     url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   max-width: 1440px;
   margin: 0 auto;
   width: 100%;
@@ -240,6 +241,7 @@ h3 {
   padding: 120px 0;
 }
 
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -270,6 +272,7 @@ h3 {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   margin-bottom: 8px;
+  height: 112px;
 }
 .adventages-icon {
   min-width: 64px;
@@ -323,6 +326,7 @@ h3 {
 .photo {
   width: calc((100% - 72px) / 4);
   width: 100%;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
   background-color: #fff;
   border-radius: 0 0 4px 4px;
@@ -344,9 +348,7 @@ h3 {
   padding: 0 16px;
 }
 .team-icon-item {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -368,10 +370,6 @@ h3 {
   height: 40px;
   border-radius: 50%;
 }
-/* 
- .icon:hover { 
-backgraund-color: #404bbf;
-transition: background-color: #404bbf, cubic-bezier(0.4, 0, 0.2, 1);} */
 
 .icon-social {
   width: 16px;
@@ -385,13 +383,6 @@ transition: background-color: #404bbf, cubic-bezier(0.4, 0, 0.2, 1);} */
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
-
-/* 
--
--
--
---
- */
 
 /* Portfolio */
 .section-portfolio {
@@ -412,16 +403,21 @@ transition: background-color: #404bbf, cubic-bezier(0.4, 0, 0.2, 1);} */
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
+  
 }
 .portfolio-item {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .portfolio-item:hover .portfolio-text-wrapper {
   transform: translateY(0);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+ 
 }
 .portfolio-item-wrapper {
   position: relative;
   overflow: hidden;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-cnt {
@@ -472,9 +468,10 @@ transition: background-color: #404bbf, cubic-bezier(0.4, 0, 0.2, 1);} */
 }
 .coneiner-logo {
   display: flex;
+  align-items: baseline,
 }
 .coneiner-logo-text {
-  padding-right: 120px;
+  margin-right: 120px;
 }
 .logo-light {
   color: #4d5ae5;
@@ -523,11 +520,10 @@ transition: background-color: #404bbf, cubic-bezier(0.4, 0, 0.2, 1);} */
   height: 40px;
   border-radius: 50%;
   background-color: #4d5ae5;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
-.foter-item-icon:hover {
+.foter-item-icon:hover,
+.foter-item-icon:active {
   background-color: #31d0aa;
 }
 .icon-footer {
