@@ -355,12 +355,11 @@ h3 {
   gap: 24px;
   border-radius: 50%;
   background-color: #4d5ae5;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-icon-item:hover {
+.team-icon-item:hover,
+.team-icon-item:active {
   background-color: #404bbf;
 }
 
