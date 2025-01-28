@@ -112,6 +112,7 @@ h3 {
 }
 .underline {
   position: relative;
+  color: #404bbf;
 }
 
 .underline::after {
