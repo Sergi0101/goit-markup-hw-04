@@ -107,15 +107,14 @@ h3 {
   letter-spacing: 0.03em;
 }
 
-.navi-link .underline {
+.navi-link .underline { 
   display: block;
   position: relative;
   color: #2e2f42;
   font-weight: 500;
   letter-spacing: 0.02em;
   padding: 24px 0;
-  text-decoration: none;
-  
+  text-decoration: none; 
 }
 
 .navi-link .underline::after{
@@ -136,7 +135,8 @@ h3 {
   opacity: 1;
   background-color: #404bbf;
 }
-.navi-link .underline:hover,
+.navi-link:hover,
+.underline:hover,
 .navi-link:focus{
   color: #404bbf;
 }
