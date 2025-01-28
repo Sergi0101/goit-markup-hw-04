@@ -102,6 +102,17 @@ h3 {
   gap: 40px;
 }
 
+.logo-accent {
+  color: #2e2f42;
+  letter-spacing: 0.03em;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .navi-link {
   color: #2e2f42;
   font-size: 16px;
@@ -156,7 +167,7 @@ h3 {
   letter-spacing: 0.02em;
 }
 
-/* Hero section */
+/*----------Hero section ----------*/
 
 .hero-section {
   background-color: #2e2f42;
